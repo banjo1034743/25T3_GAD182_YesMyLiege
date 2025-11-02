@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Controls;
 
 /// <summary>
 /// This class is what is responsible for making objects follow the cursor
@@ -8,6 +7,13 @@ using UnityEngine.InputSystem.Controls;
 public class CursorFollower : MonoBehaviour
 {
     #region Variables
+
+    [Header("Data")]
+
+    [Tooltip("Enter how far away you want the object from the screen here.")]
+    // This value affects the Z position of the object, moving it
+    // further away from the screen or further in.
+    [SerializeField] private float _distanceFromScreen;
 
     [Header("Objects")]
 
@@ -41,10 +47,9 @@ public class CursorFollower : MonoBehaviour
     {
         if (_moveAction != null)
         {
-            //Debug.Log("_moveAction is not null!");
-            Debug.Log(_moveAction.activeControl);
-            Vector2 readValue = _camera.ScreenToWorldPoint(_moveAction.ReadValue<Vector2>());
-            return new Vector3(readValue.x, readValue.y, 10);
+            Vector3 readValue = new Vector3(_moveAction.ReadValue<Vector2>().x, _moveAction.ReadValue<Vector2>().y, _distanceFromScreen);
+            Debug.Log(_camera.ScreenToWorldPoint(readValue));
+            return _camera.ScreenToWorldPoint(readValue);
         }
         else
         {
@@ -57,10 +62,12 @@ public class CursorFollower : MonoBehaviour
         _objectFollowingCursor.transform.position = GetMousePosition();
     }
 
-    private void InitializeInputActions()
+    private void InitializeScript()
     {
         _cutTheWheatActionMap = InputSystem.actions.FindActionMap("Microgame/CutTheWheat");
         _moveAction = _cutTheWheatActionMap.FindAction("Move");
+        // If this isn't here the object will be offset when we start
+        //_objectFollowingCursor.transform.position = Vector3.zero;
     }
 
     #endregion
@@ -70,7 +77,7 @@ public class CursorFollower : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InitializeInputActions();
+        InitializeScript();
     }
 
     // Update is called once per frame
