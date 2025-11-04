@@ -11,8 +11,10 @@ namespace DirtPoorPeasants.FeedMyAnimals
     {
         #region Variables
 
+        [Tooltip("Use this to determine how fast the animal will travel to differnt points in the scene")]
         [SerializeField] protected float _animalMovementSpeed;
 
+        [Tooltip("Determines the range in which the animal will pace around in")]
         [SerializeField] protected float _animalMovingBounds;
 
         protected Animator _animalAnimator;
@@ -22,6 +24,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
         #region Methods
 
         protected abstract void MoveInPattern();
+
+        protected abstract void Rotate(float amountToRotateBy);
 
         /// <summary>
         /// Put any components we need a reference to later in here
