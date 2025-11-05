@@ -8,24 +8,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [Header("Data")]
 
-        [Tooltip("This will be updated automatically in the script as the sheep moves about")]
-        [SerializeField] private Vector3 _firstPositionToMoveTo;
-
-        [Tooltip("This will be updated automatically in the script as the sheep moves about")]
-        [SerializeField] private Vector3 _secondPositionToMoveTo;
-
-        private enum MovingDirectionEnum
-        {
-            movingToFirst,
-            movingToSecond
-        }
-
-        [SerializeField] private MovingDirectionEnum _movingDirection;
-
-        [Header("Debug")]
-
-        [Tooltip("Enable this to true to make the sheep continue forward toward _firstPositionToMoveTo. Set to false to make the sheep turn around and move to _secondPositionToMoveTo.")]
-        [SerializeField] private bool _forceReturnValueForPlayerInBounds;
+        [Tooltip("Determines the range in which the sheep will pace around in")]
+        [SerializeField] private float _animalMovingBounds;
 
         #endregion
 
@@ -54,60 +38,6 @@ namespace DirtPoorPeasants.FeedMyAnimals
             // Call IncreaseMovementSpeed in GronknoliusController
         }
 
-        protected override void MoveInPattern()
-        {
-            if (_movingDirection == MovingDirectionEnum.movingToFirst)
-            {
-                Debug.Log("Called MoveToPositon for _firstPositionToMoveTo");
-                _movingDirection = MovingDirectionEnum.movingToFirst;
-                MoveToPosition(_firstPositionToMoveTo);
-            }
-            else if (_movingDirection == MovingDirectionEnum.movingToSecond)
-            {
-                Debug.Log("Called MoveToPositon for _secondPositionToMoveTo");
-                _movingDirection = MovingDirectionEnum.movingToSecond;
-                MoveToPosition(_secondPositionToMoveTo);
-            }
-        }
-
-        private void MoveToPosition(Vector3 vectorToMoveOn)
-        {
-            switch (Vector3.Distance(transform.position, vectorToMoveOn))
-            {
-                case > 0:
-                    // Call GroundCollider.GetCollider.bounds.Contains(transform.position)
-
-                    // Temporary condition for if while GroundCollider script
-                    // hasnt been coded yet
-                    if (_forceReturnValueForPlayerInBounds) 
-                    {
-                        transform.position = Vector3.MoveTowards(transform.position, vectorToMoveOn, _animalMovementSpeed * Time.deltaTime);
-                    }
-                    else
-                    {
-                        Rotate(180);
-                    }
-                    break;
-                case <= 0:
-                    Debug.Log("The distane between us and [" + vectorToMoveOn + "] is 0");
-                    Rotate(180);
-                    if (_movingDirection == MovingDirectionEnum.movingToFirst)
-                    {
-                        _movingDirection = MovingDirectionEnum.movingToSecond;
-                    }
-                    else
-                    {
-                        _movingDirection = MovingDirectionEnum.movingToFirst;
-                    }
-                    break;
-            }
-        }
-
-        protected override void Rotate(float amountToRotateBy)
-        {
-            transform.Rotate(0, amountToRotateBy, 0);
-        }
-
         private void DefineMovingRange()
         {
             // As Vector3.MoveTowards does not take into account the local rotation
@@ -119,6 +49,21 @@ namespace DirtPoorPeasants.FeedMyAnimals
             _secondPositionToMoveTo = transform.position;
         }
 
+        protected override void MoveInPattern()
+        {
+            base.MoveInPattern();
+        }
+
+        protected override void MoveToPosition(Vector3 vectorToMoveOn)
+        {
+            base.MoveToPosition(vectorToMoveOn);
+        }
+
+        protected override void Rotate(float amountToRotateBy)
+        {
+            base.Rotate(amountToRotateBy);
+        }
+
         #endregion
 
         #region Unity Methods
@@ -126,7 +71,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            InitializeScript();
+            InitializeAnimal();
             DefineMovingRange();
         }
 
