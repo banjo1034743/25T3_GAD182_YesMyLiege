@@ -1048,7 +1048,7 @@
                     "name": "Move",
                     "type": "PassThrough",
                     "id": "93eba2cf-b1e8-4ad1-86df-393c84596975",
-                    "expectedControlType": "Delta",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -1067,7 +1067,7 @@
                 {
                     "name": "",
                     "id": "99606e11-270a-4efc-8252-d32798a0d84a",
-                    "path": "<Mouse>/delta/x",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
