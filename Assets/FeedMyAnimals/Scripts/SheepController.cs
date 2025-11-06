@@ -26,7 +26,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
             // Temporary condition for if while GroundCollider script hasnt
             // been coded yet. This will also freeze Unity if this is played
             // as it is so please do not call it yet.
-            while (_forceReturnValueForPlayerInBounds)
+            while (_groundCollider.GetCollider().bounds.Contains(transform.position))
             {
                 transform.Translate(1 * _animalMovementSpeed * Time.deltaTime, 0, 0);
             }

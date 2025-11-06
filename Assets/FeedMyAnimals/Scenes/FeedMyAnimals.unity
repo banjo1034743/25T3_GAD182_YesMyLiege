@@ -584,12 +584,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.0020168, z: 1}
+  m_Center: {x: 0, y: 0.501008, z: 0}
 --- !u!23 &1028843866
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -655,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749a973bd251d54489489da86aa75873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollider: {fileID: 1028843865}
 --- !u!1 &1109953709
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +741,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 1028843868}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -757,6 +762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest
       objectReference: {fileID: 0}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 1028843868}
     - target: {fileID: 7194915985145243507, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

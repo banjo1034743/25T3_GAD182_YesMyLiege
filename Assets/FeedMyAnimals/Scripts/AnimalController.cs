@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 
 namespace DirtPoorPeasants.FeedMyAnimals
@@ -37,6 +36,10 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         protected Animator _animalAnimator;
 
+        [Header("Scripts")]
+
+        [SerializeField] protected GroundCollider _groundCollider;
+
         [Header("Debug")]
 
         [Tooltip("Enable this to true to make the sheep continue forward toward _firstPositionToMoveTo. Set to false to make the sheep turn around and move to _secondPositionToMoveTo.")]
@@ -71,26 +74,19 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
                     // Temporary condition for if while GroundCollider script
                     // hasnt been coded yet
-                    if (_forceReturnValueForPlayerInBounds)
-                    {
-                        transform.position = Vector3.MoveTowards(transform.position, vectorToMoveOn, _animalMovementSpeed * Time.deltaTime);
-                    }
-                    else
+
+                    transform.position = Vector3.MoveTowards(transform.position, vectorToMoveOn, _animalMovementSpeed * Time.deltaTime);
+
+                    if (_groundCollider.GetCollider().bounds.Contains(transform.position) == false)
                     {
                         Rotate(180);
+                        ChangeDirections();
                     }
                     break;
                 case <= 0:
                     Debug.Log("The distane between us and [" + vectorToMoveOn + "] is 0");
                     Rotate(180);
-                    if (_movingDirection == MovingDirectionEnum.movingToFirst)
-                    {
-                        _movingDirection = MovingDirectionEnum.movingToSecond;
-                    }
-                    else
-                    {
-                        _movingDirection = MovingDirectionEnum.movingToFirst;
-                    }
+                    ChangeDirections();
                     break;
                 }
             }
@@ -101,12 +97,27 @@ namespace DirtPoorPeasants.FeedMyAnimals
         }
 
         /// <summary>
+        /// If _movingDirection is movingToFirst, it will switch to movingToSecond
+        /// and vice versa
+        /// </summary>
+        protected virtual void ChangeDirections()
+        {
+            if (_movingDirection == MovingDirectionEnum.movingToFirst)
+            {
+                _movingDirection = MovingDirectionEnum.movingToSecond;
+            }
+            else
+            {
+                _movingDirection = MovingDirectionEnum.movingToFirst;
+            }
+        }
+
+        /// <summary>
         /// Put any components we need a reference to later in here
         /// so they can be ready for then. We also ensure that we
         /// grab the animator that was crfeated if there wasnt one
         /// already
         /// </summary>
-        [Theory]
         protected virtual void InitializeAnimal()
         {
             if (_animalAnimator == null)
