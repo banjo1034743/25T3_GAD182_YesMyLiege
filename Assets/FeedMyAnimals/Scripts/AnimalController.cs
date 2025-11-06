@@ -34,16 +34,11 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [Header("Components (AnimalController")]
 
-        protected Animator _animalAnimator;
+        [SerializeField] protected Animator _animalAnimator;
 
         [Header("Scripts")]
 
         [SerializeField] protected GroundCollider _groundCollider;
-
-        [Header("Debug")]
-
-        [Tooltip("Enable this to true to make the sheep continue forward toward _firstPositionToMoveTo. Set to false to make the sheep turn around and move to _secondPositionToMoveTo.")]
-        [SerializeField] protected bool _forceReturnValueForPlayerInBounds;
 
         #endregion
 
@@ -70,11 +65,6 @@ namespace DirtPoorPeasants.FeedMyAnimals
             switch (Vector3.Distance(transform.position, vectorToMoveOn))
             {
                 case > 0:
-                    // Call GroundCollider.GetCollider.bounds.Contains(transform.position)
-
-                    // Temporary condition for if while GroundCollider script
-                    // hasnt been coded yet
-
                     transform.position = Vector3.MoveTowards(transform.position, vectorToMoveOn, _animalMovementSpeed * Time.deltaTime);
 
                     if (_groundCollider.GetCollider().bounds.Contains(transform.position) == false)

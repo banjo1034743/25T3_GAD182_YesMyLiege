@@ -11,21 +11,17 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("Determines the range in which the sheep will pace around in")]
         [SerializeField] private float _animalMovingBounds;
 
+        [Header("Scripts")]
+
+        // We use this for updating the speed when we exit the pen as a sheep
+        [SerializeField] private GronknoliusController _gronknoliusController;
+
         #endregion
 
         #region Methods
 
-        /// <summary>
-        /// DO NOT CALL THIS YET, will freeze Unity otherwise
-        /// We call this to make the Sheep exit the pen.
-        /// </summary>
         public void ExitPen()
         {
-            // Call GroundCollider.GetCollider.bounds.Contains(transform.position)
-
-            // Temporary condition for if while GroundCollider script hasnt
-            // been coded yet. This will also freeze Unity if this is played
-            // as it is so please do not call it yet.
             while (_groundCollider.GetCollider().bounds.Contains(transform.position))
             {
                 transform.Translate(1 * _animalMovementSpeed * Time.deltaTime, 0, 0);
@@ -35,7 +31,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
             // Call PlayAnimalSFX(0, transform.position) in SheepSoundManager
 
-            // Call IncreaseMovementSpeed in GronknoliusController
+            _gronknoliusController.IncreaseMovementSpeed();
         }
 
         private void DefineMovingRange()
