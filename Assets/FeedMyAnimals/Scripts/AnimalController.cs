@@ -94,11 +94,33 @@ namespace DirtPoorPeasants.FeedMyAnimals
         {
             if (_movingDirection == MovingDirectionEnum.movingToFirst)
             {
+                ReadustPositon();
+
                 _movingDirection = MovingDirectionEnum.movingToSecond;
             }
             else
             {
+                ReadustPositon();
+
                 _movingDirection = MovingDirectionEnum.movingToFirst;
+            }
+        }
+
+        /// <summary>
+        /// This method prevents a bug where the sheep will infinte
+        /// spam Rotate() if the position their trying to reach is
+        /// beyond the stage. It brings them back into the collider
+        /// bounds regardless of which side they stand on
+        /// </summary>
+        private void ReadustPositon()
+        {
+            if (transform.position.x >= 0)
+            {
+                transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
+            }
+            else if (transform.position.x < 0)
+            {
+                transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
             }
         }
 
