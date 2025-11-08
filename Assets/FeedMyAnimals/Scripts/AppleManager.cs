@@ -17,6 +17,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("List of icons on the UI representing the amount of apples the player has to drop.")]
         [SerializeField] private List<GameObject> _appleIcons = new List<GameObject>();
 
+        public static AppleManager instance;
+
         #endregion
 
         #region Methods
@@ -40,16 +42,16 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         #region Unity Methods
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        void Awake()
         {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(this);
+            }
         }
 
         #endregion

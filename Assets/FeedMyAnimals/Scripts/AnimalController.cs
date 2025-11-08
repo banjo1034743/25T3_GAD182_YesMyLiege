@@ -36,9 +36,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [SerializeField] protected Animator _animalAnimator;
 
-        [Header("Scripts")]
-
-        [SerializeField] protected GroundCollider _groundCollider;
+        [Tooltip("Drop the collider that expands out as far as you want the animals to walk in here")]
+        [SerializeField] protected Collider _animalWalkingZone;
 
         #endregion
 
@@ -67,7 +66,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
                 case > 0:
                     transform.position = Vector3.MoveTowards(transform.position, vectorToMoveOn, _animalMovementSpeed * Time.deltaTime);
 
-                    if (_groundCollider.GetCollider().bounds.Contains(transform.position) == false)
+                    if (_animalWalkingZone.bounds.Contains(transform.position) == false)
                     {
                         Rotate(180);
                         ChangeDirections();

@@ -198,6 +198,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &193097124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193097125}
+  - component: {fileID: 193097126}
+  m_Layer: 0
+  m_Name: Collider - AnimalWalkingArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193097125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193097124}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.51, z: 0}
+  m_LocalScale: {x: 20, y: 4.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1109953710}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &193097126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193097124}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.42, z: 1}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +787,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989837736 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+  m_PrefabInstance: {fileID: 1519678103414450972}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec5dc5d9bd80f24283c486cf5600a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024101441
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,13 +955,13 @@ BoxCollider:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.0020168, z: 1}
-  m_Center: {x: 0, y: 0.501008, z: 0}
+  m_Size: {x: 1, y: 1.0058237, z: 1}
+  m_Center: {x: 0, y: 0.0029100843, z: 0}
 --- !u!23 &1028843866
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -994,9 +1058,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1028843864}
+  - {fileID: 193097125}
   - {fileID: 1024101442}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1337380822 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8072976209563316057, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
+  m_PrefabInstance: {fileID: 6996032932531966602}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1387990236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.47
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1465,10 +1535,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
       propertyPath: _groundCollider
       value: 
       objectReference: {fileID: 1028843868}
+    - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1522,6 +1612,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4543077335315294239, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
+      propertyPath: _positionToDropApples
+      value: 
+      objectReference: {fileID: 1337380822}
     - target: {fileID: 5054207060849391459, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
       propertyPath: _groundCollider
       value: 
@@ -1543,6 +1637,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 774965979337535497, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 774965979337535497, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 774965979337535497, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 774965979337535497, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_Name
       value: Cube - SheepTest
@@ -1551,6 +1661,14 @@ PrefabInstance:
       propertyPath: _groundCollider
       value: 
       objectReference: {fileID: 1028843868}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
     - target: {fileID: 7194915985145243507, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.26

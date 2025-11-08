@@ -22,7 +22,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         public void ExitPen()
         {
-            while (_groundCollider.GetCollider().bounds.Contains(transform.position))
+            while (_animalWalkingZone.bounds.Contains(transform.position))
             {
                 transform.Translate(1 * _animalMovementSpeed * Time.deltaTime, 0, 0);
             }
