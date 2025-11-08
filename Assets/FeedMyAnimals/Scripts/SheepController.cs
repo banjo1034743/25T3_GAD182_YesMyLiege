@@ -11,6 +11,9 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("Determines the range in which the sheep will pace around in")]
         [SerializeField] private float _animalMovingBounds;
 
+        [Tooltip("Enter the position where the sheep is no longer on screen.")]
+        [SerializeField] private Vector3 _positionToExitTo;
+
         [Header("Scripts")]
 
         // We use this for updating the speed when we exit the pen as a sheep
@@ -24,7 +27,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         {
             while (_animalWalkingZone.bounds.Contains(transform.position))
             {
-                transform.Translate(1 * _animalMovementSpeed * Time.deltaTime, 0, 0);
+                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 1 * _animalMovementSpeed * Time.deltaTime);
             }
 
             // Call RemoveSheep(gameObject) in SheepManager
@@ -32,6 +35,10 @@ namespace DirtPoorPeasants.FeedMyAnimals
             // Call PlayAnimalSFX(0, transform.position) in SheepSoundManager
 
             _gronknoliusController.IncreaseMovementSpeed();
+
+            // This line is temporary and has only been added to test
+            // functionality of this method
+            gameObject.SetActive(false);
         }
 
         private void DefineMovingRange()
