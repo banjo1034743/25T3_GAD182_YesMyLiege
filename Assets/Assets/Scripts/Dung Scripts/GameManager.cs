@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class cusGameManager : MonoBehaviour
 {
@@ -17,9 +18,15 @@ public static cusGameManager Instance { get; private set; }
         {
             Instance = this;
         }
+        // Class Starts here, ignore above (is needed, dont even worry about it)
     }
     public int objectiveCount;
     
- 
-
+    // private void CompletionChecker()
+    // {
+    //     if (objectiveCount <= 0)
+    //     {
+    //         SceneManager.LoadScene("Intermission Scene");
+    //     }
+    // }
 }
