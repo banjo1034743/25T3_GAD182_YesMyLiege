@@ -111,7 +111,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         /// beyond the stage. It brings them back into the collider
         /// bounds regardless of which side they stand on
         /// </summary>
-        private void ReadustPositon()
+        protected void ReadustPositon()
         {
             if (transform.position.x >= 0)
             {

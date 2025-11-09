@@ -67,6 +67,11 @@ namespace DirtPoorPeasants.FeedMyAnimals
             base.Rotate(amountToRotateBy);
         }
 
+        protected override void InitializeAnimal()
+        {
+            base.InitializeAnimal();
+        }
+
         #endregion
 
         #region Unity Methods

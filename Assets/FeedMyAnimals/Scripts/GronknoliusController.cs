@@ -17,7 +17,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         public void IncreaseMovementSpeed()
         {
-            _amountToIncrementSpeedBy += _amountToIncrementSpeedBy;
+            _animalMovementSpeed += _amountToIncrementSpeedBy;
             // Call PlayAnimalSFX(0, transform.position) in GronknoliusSoundPlayer
         }
 
