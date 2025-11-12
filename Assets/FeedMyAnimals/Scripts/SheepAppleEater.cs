@@ -14,6 +14,9 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [SerializeField] private SheepController _sheepController;
 
+        // We reference this to get access to the PlaySFX() method.
+        [SerializeField] private SheepSoundPlayer _sheepSoundPlayer;
+
         #endregion
 
         #region Methods
@@ -29,7 +32,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
             {
                 AppleManager.instance.UpdateAppleCount(-1);
                 _sheepController.ExitPen();
-                // Call PlaySheepSFX(1, transform.position) in SheepSoundPlayer
+                _sheepSoundPlayer.PlaySFX(1, transform.position);
             }
         }
 

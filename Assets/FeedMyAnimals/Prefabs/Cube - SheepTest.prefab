@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7194915985145243507}
   - component: {fileID: 7178882581745409401}
   - component: {fileID: 3566188167799613710}
+  - component: {fileID: 5706750411298881564}
   - component: {fileID: 8227899785940247369}
   - component: {fileID: 4343148926356728116}
   - component: {fileID: 774965979337535497}
@@ -57,7 +58,9 @@ MonoBehaviour:
   _animalAnimator: {fileID: 0}
   _animalWalkingZone: {fileID: 0}
   _animalMovingBounds: 5
+  _positionToExitTo: {x: -11, y: 3, z: 0}
   _gronknoliusController: {fileID: 0}
+  _sheepSoundPlayer: {fileID: 5706750411298881564}
 --- !u!114 &3566188167799613710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +75,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hasEatenApple: 0
   _sheepController: {fileID: 7178882581745409401}
+  _sheepSoundPlayer: {fileID: 5706750411298881564}
+--- !u!114 &5706750411298881564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2346702385880119311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926b0ff406af9474f9774475a2d60d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundEffects:
+  - {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
+  - {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
 --- !u!33 &8227899785940247369
 MeshFilter:
   m_ObjectHideFlags: 0

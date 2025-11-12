@@ -19,6 +19,9 @@ namespace DirtPoorPeasants.FeedMyAnimals
         // We use this for updating the speed when we exit the pen as a sheep
         [SerializeField] private GronknoliusController _gronknoliusController;
 
+        // We reference this to get access to the PlaySFX() method.
+        [SerializeField] private SheepSoundPlayer _sheepSoundPlayer;
+
         #endregion
 
         #region Methods
@@ -32,7 +35,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
             // Call RemoveSheep(gameObject) in SheepManager
 
-            // Call PlayAnimalSFX(0, transform.position) in SheepSoundManager
+            _sheepSoundPlayer.PlaySFX(0, transform.position);
 
             _gronknoliusController.IncreaseMovementSpeed();
 
