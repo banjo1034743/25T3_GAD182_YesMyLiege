@@ -698,18 +698,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: _soundEffects.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -1227,18 +1215,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: _soundEffects.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -1650,18 +1626,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: _soundEffects.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -1802,18 +1766,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: _soundEffects.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -1919,6 +1871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5710947462973599044, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: '_soundEffects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: b06dc65ec794e174e988a04b91186e17, type: 3}
     - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
       propertyPath: _animalWalkingZone
       value: 

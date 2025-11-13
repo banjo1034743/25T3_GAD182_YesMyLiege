@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _soundEffects:
-  - {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
-  - {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
+  - {fileID: 8300000, guid: 44acf9ff294421842bc6797a0a40ff10, type: 3}
+  - {fileID: 8300000, guid: 81b19fa5d84ee1641b6e0722258a4227, type: 3}
 --- !u!33 &8227899785940247369
 MeshFilter:
   m_ObjectHideFlags: 0
