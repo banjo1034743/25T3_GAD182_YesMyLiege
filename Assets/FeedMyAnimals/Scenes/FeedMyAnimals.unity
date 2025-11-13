@@ -705,7 +705,7 @@ PrefabInstance:
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: b3ca31abc3e9a6347b1830c263d5233d, type: 3}
+      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[1]'
       value: 
@@ -775,18 +775,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: _soundEffects.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: b3ca31abc3e9a6347b1830c263d5233d, type: 3}
-    - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-      propertyPath: '_soundEffects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 07f3c52409e27ce45b8f20961ad0541f, type: 3}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -941,37 +929,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &989837731 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 766668266924444768, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-  m_PrefabInstance: {fileID: 1519678103414450972}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &989837736 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
   m_PrefabInstance: {fileID: 1519678103414450972}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989837731}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ec5dc5d9bd80f24283c486cf5600a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &989837738
+--- !u!114 &989837743 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5710947462973599044, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+  m_PrefabInstance: {fileID: 1519678103414450972}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989837731}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6c906bcac914043bd6aeef59edef63, type: 3}
+  m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnGronknoliusEatApple:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1024101441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,7 +1234,7 @@ PrefabInstance:
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: b3ca31abc3e9a6347b1830c263d5233d, type: 3}
+      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[1]'
       value: 
@@ -1678,7 +1657,7 @@ PrefabInstance:
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: b3ca31abc3e9a6347b1830c263d5233d, type: 3}
+      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[1]'
       value: 
@@ -1830,7 +1809,7 @@ PrefabInstance:
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: b3ca31abc3e9a6347b1830c263d5233d, type: 3}
+      objectReference: {fileID: 8300000, guid: 1595022b9505954479c96247204ff759, type: 3}
     - target: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: '_soundEffects.Array.data[1]'
       value: 
@@ -1940,37 +1919,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199104415812957455, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: _groundCollider
-      value: 
-      objectReference: {fileID: 1028843868}
     - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
+    - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+      propertyPath: _gronknoliusSoundPlayer
+      value: 
+      objectReference: {fileID: 989837743}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 766668266924444768, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 989837738}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
 --- !u!1001 &6996032932531966602
 PrefabInstance:

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3203687808208710223}
   - component: {fileID: 7472899588614289807}
+  - component: {fileID: 530124699378260062}
+  - component: {fileID: 5710947462973599044}
   - component: {fileID: 3403375863442450986}
   - component: {fileID: 3372823599605412198}
   - component: {fileID: 6199104415812957455}
@@ -29,13 +31,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766668266924444768}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 5.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &7472899588614289807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,8 +55,39 @@ MonoBehaviour:
   _secondPositionToMoveTo: {x: -9, y: 3, z: 0}
   _heightToStartAt: 3
   _movingDirection: 0
-  _forceReturnValueForPlayerInBounds: 1
+  _animalAnimator: {fileID: 0}
+  _animalWalkingZone: {fileID: 0}
   _amountToIncrementSpeedBy: 5
+  _gronknoliusSoundPlayer: {fileID: 0}
+--- !u!114 &530124699378260062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766668266924444768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6c906bcac914043bd6aeef59edef63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGronknoliusEatApple:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5710947462973599044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766668266924444768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundEffects:
+  - {fileID: 8300000, guid: aa6037b12bf2e5842ba9e37a710237b5, type: 3}
 --- !u!33 &3403375863442450986
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -123,9 +156,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

@@ -11,6 +11,11 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("Adjust this to increase how much Gronknolius' speed will increase everytime a sheep is fed an apple.")]
         [SerializeField] private float _amountToIncrementSpeedBy;
 
+        [Header("Scripts")]
+
+        //The script that is used to play sound effects that we reference for this.
+        [SerializeField] private GronknoliusSoundPlayer _gronknoliusSoundPlayer;
+
         #endregion
 
         #region Methods
@@ -18,7 +23,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         public void IncreaseMovementSpeed()
         {
             _animalMovementSpeed += _amountToIncrementSpeedBy;
-            // Call PlayAnimalSFX(0, transform.position) in GronknoliusSoundPlayer
+            _gronknoliusSoundPlayer.PlaySFX(0, transform.position);
         }
 
         protected override void MoveInPattern()
