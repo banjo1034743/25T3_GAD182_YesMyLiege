@@ -611,6 +611,17 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!114 &414286774 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 610523482}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &482492951
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +697,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482492951}
   m_CullTransparentMesh: 1
+--- !u!114 &597837606 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 8555801791973916544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &610523482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -698,6 +720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -751,6 +777,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+--- !u!114 &635611378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 1809471964}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &786530666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -763,6 +800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -1216,6 +1257,10 @@ PrefabInstance:
       value: Cube - SheepTest (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
@@ -1314,6 +1359,71 @@ RectTransform:
   m_AnchoredPosition: {x: -227.328, y: -346.9023}
   m_SizeDelta: {x: 422.836, y: 665.797}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1500263745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1500263747}
+  - component: {fileID: 1500263746}
+  m_Layer: 0
+  m_Name: GameObject - SheepManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1500263746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500263745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f10eb48f34f814b95dbf0bc303b677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sheepList:
+  - {fileID: 597837606}
+  - {fileID: 1781068078}
+  - {fileID: 2123393378}
+  - {fileID: 635611378}
+  - {fileID: 1539457062}
+  - {fileID: 414286774}
+  OnAllSheepFed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1500263747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500263745}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1539457062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 786530666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680479800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1724,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749579796}
   m_CullTransparentMesh: 1
+--- !u!114 &1781068078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 2033260469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1809471964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1626,6 +1747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
@@ -1767,6 +1892,10 @@ PrefabInstance:
       value: Cube - SheepTest (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
@@ -1819,6 +1948,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+--- !u!114 &2123393378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 1126350722}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1519678103414450972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1966,6 +2106,10 @@ PrefabInstance:
       value: Cube - SheepTest
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
@@ -2035,5 +2179,6 @@ SceneRoots:
   - {fileID: 1519678103414450972}
   - {fileID: 6996032932531966602}
   - {fileID: 899304647}
+  - {fileID: 1500263747}
   - {fileID: 401776500}
   - {fileID: 45045731}

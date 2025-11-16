@@ -61,6 +61,8 @@ MonoBehaviour:
   _positionToExitTo: {x: -11, y: 3, z: 0}
   _gronknoliusController: {fileID: 0}
   _sheepSoundPlayer: {fileID: 5706750411298881564}
+  _sheepManager: {fileID: 0}
+  _sheepAppleEater: {fileID: 3566188167799613710}
 --- !u!114 &3566188167799613710
 MonoBehaviour:
   m_ObjectHideFlags: 0

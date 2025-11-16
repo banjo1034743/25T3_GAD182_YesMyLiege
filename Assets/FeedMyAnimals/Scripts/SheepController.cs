@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace DirtPoorPeasants.FeedMyAnimals
@@ -22,26 +23,29 @@ namespace DirtPoorPeasants.FeedMyAnimals
         // We reference this to get access to the PlaySFX() method.
         [SerializeField] private SheepSoundPlayer _sheepSoundPlayer;
 
+        [SerializeField] private SheepManager _sheepManager;
+
+        [SerializeField] private SheepAppleEater _sheepAppleEater;
+
         #endregion
 
         #region Methods
 
-        public void ExitPen()
+        public IEnumerator ExitPen()
         {
             while (_animalWalkingZone.bounds.Contains(transform.position))
             {
-                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 1 * _animalMovementSpeed * Time.deltaTime);
-            }
+                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 4 * _animalMovementSpeed * Time.deltaTime);
 
-            // Call RemoveSheep(gameObject) in SheepManager
+                yield return null;
+            }
 
             _sheepSoundPlayer.PlaySFX(0, transform.position);
 
             _gronknoliusController.IncreaseMovementSpeed();
 
-            // This line is temporary and has only been added to test
-            // functionality of this method
-            gameObject.SetActive(false);
+            _sheepManager.RemoveSheep(gameObject);
+
         }
 
         private void DefineMovingRange()
@@ -57,7 +61,10 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         protected override void MoveInPattern()
         {
-            base.MoveInPattern();
+            if (!_sheepAppleEater.GetHasEatenApple())
+            {
+                base.MoveInPattern();
+            }
         }
 
         protected override void MoveToPosition(Vector3 vectorToMoveOn)
