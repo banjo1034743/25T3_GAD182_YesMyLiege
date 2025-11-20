@@ -31,7 +31,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
             if (collidedObject.CompareTag("Apple"))
             {
                 AppleManager.instance.UpdateAppleCount(-1);
-                StartCoroutine(_sheepController.ExitPen());
+                _sheepController.BeginExitPenCoroutine();
                 _sheepSoundPlayer.PlaySFX(1, transform.position);
                 _hasEatenApple = true;
             }

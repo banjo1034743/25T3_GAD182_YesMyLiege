@@ -198,6 +198,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &191237309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_Name
+      value: GameObject - Sheep (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gameArea
+      value: 
+      objectReference: {fileID: 395146102}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepAppleEater
+      value: 
+      objectReference: {fileID: 597837606}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepSoundPlayer
+      value: 
+      objectReference: {fileID: 999558636}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
 --- !u!1 &193097124
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +473,59 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &395146100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395146101}
+  - component: {fileID: 395146102}
+  m_Layer: 0
+  m_Name: Collider - GameArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &395146101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395146100}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.51, z: 0}
+  m_LocalScale: {x: 20, y: 4.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1109953710}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &395146102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395146100}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.19357, y: 0.42, z: 1}
+  m_Center: {x: 0.04142139, y: 0.15, z: 0}
 --- !u!1 &401776496
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,17 +749,172 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!114 &414286774 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-  m_PrefabInstance: {fileID: 610523482}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+--- !u!1001 &421004758
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_Name
+      value: GameObject - Sheep (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gameArea
+      value: 
+      objectReference: {fileID: 395146102}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepAppleEater
+      value: 
+      objectReference: {fileID: 597837606}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepSoundPlayer
+      value: 
+      objectReference: {fileID: 999558636}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+--- !u!1001 &436664124
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_Name
+      value: GameObject - Sheep (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gameArea
+      value: 
+      objectReference: {fileID: 395146102}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepAppleEater
+      value: 
+      objectReference: {fileID: 597837606}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepSoundPlayer
+      value: 
+      objectReference: {fileID: 999558636}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
 --- !u!1 &482492951
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +990,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482492951}
   m_CullTransparentMesh: 1
+--- !u!114 &528279642 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6483276855229287261, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+  m_PrefabInstance: {fileID: 191237309}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &557716265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6483276855229287261, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+  m_PrefabInstance: {fileID: 421004758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &597837606 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
@@ -719,6 +1034,10 @@ PrefabInstance:
     - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_Name
       value: Cube - SheepTest (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _sheepManager
@@ -777,17 +1096,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
---- !u!114 &635611378 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-  m_PrefabInstance: {fileID: 1809471964}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &786530666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -799,6 +1107,10 @@ PrefabInstance:
     - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_Name
       value: Cube - SheepTest (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _sheepManager
@@ -857,6 +1169,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+--- !u!114 &828497386 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6483276855229287261, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+  m_PrefabInstance: {fileID: 1130986546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +1229,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &847591880
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_Name
+      value: GameObject - Sheep (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gameArea
+      value: 
+      objectReference: {fileID: 395146102}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepAppleEater
+      value: 
+      objectReference: {fileID: 597837606}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepSoundPlayer
+      value: 
+      objectReference: {fileID: 999558636}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
 --- !u!1 &899304645
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +1386,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &999558636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5706750411298881564, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+  m_PrefabInstance: {fileID: 8555801791973916544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926b0ff406af9474f9774475a2d60d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1024101441
@@ -1241,6 +1660,7 @@ Transform:
   m_Children:
   - {fileID: 1028843864}
   - {fileID: 193097125}
+  - {fileID: 395146101}
   - {fileID: 1024101442}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1255,6 +1675,10 @@ PrefabInstance:
     - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_Name
       value: Cube - SheepTest (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _sheepManager
@@ -1313,7 +1737,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
---- !u!1001 &1222645336
+--- !u!1001 &1130986546
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1321,70 +1745,94 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_Name
+      value: GameObject - Sheep (2)
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.580351
+      value: -1.91
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.436
+      value: 2.435
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.05
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
-      propertyPath: m_Name
-      value: Mesh - Sheep
-      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gameArea
+      value: 
+      objectReference: {fileID: 395146102}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepAppleEater
+      value: 
+      objectReference: {fileID: 597837606}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepSoundPlayer
+      value: 
+      objectReference: {fileID: 999558636}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1773883758}
-  m_SourcePrefab: {fileID: 100100000, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+--- !u!114 &1167923634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6483276855229287261, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+  m_PrefabInstance: {fileID: 847591880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1337380822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8072976209563316057, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
@@ -1431,6 +1879,17 @@ RectTransform:
   m_AnchoredPosition: {x: -206.98407, y: -346.9023}
   m_SizeDelta: {x: 382.148, y: 665.797}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1443285373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6483276855229287261, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+  m_PrefabInstance: {fileID: 436664124}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1500263745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,12 +1920,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sheepList:
-  - {fileID: 597837606}
-  - {fileID: 1781068078}
-  - {fileID: 2123393378}
-  - {fileID: 635611378}
-  - {fileID: 1539457062}
-  - {fileID: 414286774}
+  - {fileID: 2068257682}
+  - {fileID: 1443285373}
+  - {fileID: 828497386}
+  - {fileID: 1167923634}
+  - {fileID: 528279642}
+  - {fileID: 557716265}
   OnAllSheepFed:
     m_PersistentCalls:
       m_Calls: []
@@ -1485,17 +1944,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1539457062 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-  m_PrefabInstance: {fileID: 786530666}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1680479800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,44 +2244,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749579796}
   m_CullTransparentMesh: 1
---- !u!1 &1773883757 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bd2fa171c412dea4c80bba6f58a895c3, type: 3}
-  m_PrefabInstance: {fileID: 1222645336}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1773883758
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773883757}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eef09d364f272334281c368c6981d890, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1781068078 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-  m_PrefabInstance: {fileID: 2033260469}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1809471964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1845,6 +2255,10 @@ PrefabInstance:
     - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_Name
       value: Cube - SheepTest (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _sheepManager
@@ -1990,6 +2404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube - SheepTest (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _sheepManager
       value: 
@@ -2047,10 +2465,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
---- !u!114 &2123393378 stripped
+--- !u!114 &2068257682 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3566188167799613710, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
-  m_PrefabInstance: {fileID: 1126350722}
+  m_CorrespondingSourceObject: {fileID: 6483276855229287261, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+  m_PrefabInstance: {fileID: 8003020692215067548}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -2192,6 +2610,99 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
+--- !u!1001 &8003020692215067548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_Name
+      value: GameObject - Sheep
+      objectReference: {fileID: 0}
+    - target: {fileID: 594366699175648278, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644188498929827148, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gameArea
+      value: 
+      objectReference: {fileID: 395146102}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepManager
+      value: 
+      objectReference: {fileID: 1500263746}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _heightToStartAt
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepAppleEater
+      value: 
+      objectReference: {fileID: 597837606}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _sheepSoundPlayer
+      value: 
+      objectReference: {fileID: 999558636}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalWalkingZone
+      value: 
+      objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _positionToExitTo.y
+      value: 2.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _gronknoliusController
+      value: 
+      objectReference: {fileID: 989837736}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
 --- !u!1001 &8555801791973916544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2203,6 +2714,10 @@ PrefabInstance:
     - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: m_Name
       value: Cube - SheepTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346702385880119311, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7178882581745409401, guid: 2d93a2b8a5bea7344a9fdf97da0f0834, type: 3}
       propertyPath: _sheepManager
@@ -2269,6 +2784,12 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1109953710}
+  - {fileID: 8003020692215067548}
+  - {fileID: 436664124}
+  - {fileID: 1130986546}
+  - {fileID: 847591880}
+  - {fileID: 191237309}
+  - {fileID: 421004758}
   - {fileID: 8555801791973916544}
   - {fileID: 2033260469}
   - {fileID: 1126350722}
@@ -2281,4 +2802,3 @@ SceneRoots:
   - {fileID: 1500263747}
   - {fileID: 401776500}
   - {fileID: 45045731}
-  - {fileID: 1222645336}

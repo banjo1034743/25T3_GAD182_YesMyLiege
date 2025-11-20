@@ -15,6 +15,12 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("Enter the position where the sheep is no longer on screen.")]
         [SerializeField] private Vector3 _positionToExitTo;
 
+        private Coroutine _exitPenCoroutine;
+
+        [Header("Components")]
+
+        [SerializeField] private Collider _gameArea;
+
         [Header("Scripts")]
 
         // We use this for updating the speed when we exit the pen as a sheep
@@ -30,12 +36,21 @@ namespace DirtPoorPeasants.FeedMyAnimals
         #endregion
 
         #region Methods
-
-        public IEnumerator ExitPen()
+        
+        public void BeginExitPenCoroutine()
         {
-            while (_animalWalkingZone.bounds.Contains(transform.position))
+            if (_exitPenCoroutine == null)
+            {
+                _exitPenCoroutine = StartCoroutine(ExitPen());
+            }
+        }
+
+        private IEnumerator ExitPen()
+        {
+            while (transform.position.x > _positionToExitTo.x)
             {
                 transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 4 * _animalMovementSpeed * Time.deltaTime);
+                Debug.Log("We're currently in the ExitPen() while loop");
 
                 yield return null;
             }
@@ -46,6 +61,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
             _sheepManager.RemoveSheep(gameObject);
 
+            StopCoroutine(_exitPenCoroutine);
         }
 
         private void DefineMovingRange()
@@ -63,13 +79,17 @@ namespace DirtPoorPeasants.FeedMyAnimals
         {
             if (!_sheepAppleEater.GetHasEatenApple())
             {
+                Debug.Log("Despite having eten the apple, we're still calling MoveInPattern()");
                 base.MoveInPattern();
             }
         }
 
         protected override void MoveToPosition(Vector3 vectorToMoveOn)
         {
-            base.MoveToPosition(vectorToMoveOn);
+            if (!_sheepAppleEater.GetHasEatenApple())
+            {
+                base.MoveToPosition(vectorToMoveOn);
+            }
         }
 
         protected override void Rotate(float amountToRotateBy)
@@ -87,14 +107,14 @@ namespace DirtPoorPeasants.FeedMyAnimals
         #region Unity Methods
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        protected void Start()
         {
             InitializeAnimal();
             DefineMovingRange();
         }
 
         // Update is called once per frame
-        void Update()
+        protected void Update()
         {
             MoveInPattern();
         }
