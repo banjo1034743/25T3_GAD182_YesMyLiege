@@ -57,7 +57,7 @@ MonoBehaviour:
   _animalAnimator: {fileID: 0}
   _animalWalkingZone: {fileID: 0}
   _animalMovingBounds: 5
-  _positionToExitTo: {x: -16, y: 2.435, z: 0.05}
+  _positionToExitTo: {x: -11, y: 2.435, z: 0.05}
   _gameArea: {fileID: 0}
   _gronknoliusController: {fileID: 0}
   _sheepSoundPlayer: {fileID: 2322981650557927405}

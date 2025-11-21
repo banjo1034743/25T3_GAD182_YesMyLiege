@@ -49,7 +49,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         {
             while (transform.position.x > _positionToExitTo.x)
             {
-                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 4 * _animalMovementSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 4f * _animalMovementSpeed * Time.deltaTime);
                 Debug.Log("We're currently in the ExitPen() while loop");
 
                 yield return null;
@@ -60,8 +60,6 @@ namespace DirtPoorPeasants.FeedMyAnimals
             _gronknoliusController.IncreaseMovementSpeed();
 
             _sheepManager.RemoveSheep(gameObject);
-
-            StopCoroutine(_exitPenCoroutine);
         }
 
         private void DefineMovingRange()
