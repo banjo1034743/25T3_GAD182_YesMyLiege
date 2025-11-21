@@ -47,6 +47,12 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         private IEnumerator ExitPen()
         {
+            // So the sheep is facing the right way when exiting
+            if (_movingDirection == MovingDirectionEnum.movingToFirst)
+            {
+                Rotate(-180);
+            }
+
             while (transform.position.x > _positionToExitTo.x)
             {
                 transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 4f * _animalMovementSpeed * Time.deltaTime);
@@ -70,7 +76,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
             // but I know we're only going to move this on one axis so it shouldn;t
             // matter that much.
             _firstPositionToMoveTo = new Vector3(transform.position.x + _animalMovingBounds, transform.position.y, transform.position.z);
-            _secondPositionToMoveTo = transform.position;
+            _secondPositionToMoveTo = new Vector3(transform.position.x - _animalMovingBounds, transform.position.y, transform.position.z);
         }
 
         protected override void MoveInPattern()
@@ -98,6 +104,21 @@ namespace DirtPoorPeasants.FeedMyAnimals
         protected override void InitializeAnimal()
         {
             base.InitializeAnimal();
+
+            DefineMovingRange();
+
+            if (_movingDirection == MovingDirectionEnum.movingToFirst)
+            {
+                // We do not call rotate for this as we're assummung that
+                // the sheep will be default be facing in this direction
+                ReadustPositon();
+            }
+            else if (_movingDirection == MovingDirectionEnum.movingToSecond)
+            {
+                Rotate(180);
+                ReadustPositon();
+            }
+
         }
 
         #endregion
@@ -108,7 +129,6 @@ namespace DirtPoorPeasants.FeedMyAnimals
         protected void Start()
         {
             InitializeAnimal();
-            DefineMovingRange();
         }
 
         // Update is called once per frame

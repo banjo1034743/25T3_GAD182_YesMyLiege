@@ -1955,9 +1955,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1500263746}
     - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _movingDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
+    - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
+      propertyPath: _animalMovingBounds
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7507253075803791578, guid: 213f3f7c4d2bce64ba8d2ad0c602fd57, type: 3}
       propertyPath: _gronknoliusController
       value: 
