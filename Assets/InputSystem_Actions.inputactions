@@ -8,6 +8,7 @@
             "actions": [
                 {
                     "name": "Move",
+<<<<<<< HEAD
                     "type": "Value",
                     "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
                     "expectedControlType": "Vector2",
@@ -83,6 +84,11 @@
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
                     "expectedControlType": "Button",
+=======
+                    "type": "Button",
+                    "id": "57930ce1-e48a-437c-ad10-7c8c01cf888a",
+                    "expectedControlType": "",
+>>>>>>> parent of 20c0c49 (Deleted Input for merging)
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -91,16 +97,25 @@
             "bindings": [
                 {
                     "name": "",
+<<<<<<< HEAD
                     "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
+=======
+                    "id": "50c83e08-953d-4d6a-855b-320e6783c70c",
+                    "path": "<Keyboard>/#(A)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+>>>>>>> parent of 20c0c49 (Deleted Input for merging)
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
+<<<<<<< HEAD
                     "name": "WASD",
                     "id": "00ca640b-d935-4593-8157-c05846ea39b3",
                     "path": "Dpad",
@@ -180,12 +195,17 @@
                 {
                     "name": "right",
                     "id": "fcfe95b8-67b9-4526-84b5-5d0bc98d6400",
+=======
+                    "name": "",
+                    "id": "0370ac39-83e7-4d0b-88fc-8b85497583ce",
+>>>>>>> parent of 20c0c49 (Deleted Input for merging)
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Move",
                     "isComposite": false,
+<<<<<<< HEAD
                     "isPartOfComposite": true
                 },
                 {
@@ -472,6 +492,8 @@
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
                     "isComposite": false,
+=======
+>>>>>>> parent of 20c0c49 (Deleted Input for merging)
                     "isPartOfComposite": false
                 }
             ]
