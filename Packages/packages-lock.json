@@ -10,7 +10,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
+<<<<<<< HEAD
       "version": "1.8.23",
+=======
+      "version": "1.8.25",
+>>>>>>> parent of 24fd561 (Merge branch 'develop' into microgame/feed-my-animals)
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -27,7 +31,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
+<<<<<<< HEAD
       "version": "2.5.1",
+=======
+      "version": "2.6.2",
+>>>>>>> parent of 24fd561 (Merge branch 'develop' into microgame/feed-my-animals)
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -87,7 +95,11 @@
       }
     },
     "com.unity.nuget.mono-cecil": {
+<<<<<<< HEAD
       "version": "1.11.4",
+=======
+      "version": "1.11.5",
+>>>>>>> parent of 24fd561 (Merge branch 'develop' into microgame/feed-my-animals)
       "depth": 3,
       "source": "registry",
       "dependencies": {},
@@ -179,7 +191,11 @@
       }
     },
     "com.unity.test-framework.performance": {
+<<<<<<< HEAD
       "version": "3.1.0",
+=======
+      "version": "3.2.0",
+>>>>>>> parent of 24fd561 (Merge branch 'develop' into microgame/feed-my-animals)
       "depth": 3,
       "source": "registry",
       "dependencies": {
