@@ -38,6 +38,11 @@ namespace DirtPoorPeasants.FeedMyAnimals
             }
 
             _sheepList = tempList;
+
+            if (_sheepList.Count == 0)
+            {
+                OnAllSheepFed.Invoke();
+            }
         }
 
         #endregion
