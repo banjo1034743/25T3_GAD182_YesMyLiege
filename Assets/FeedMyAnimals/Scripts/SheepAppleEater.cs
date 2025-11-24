@@ -28,10 +28,11 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         private void EatApple(GameObject collidedObject)
         {
-            if (collidedObject.CompareTag("Apple"))
+            if (collidedObject.CompareTag("Apple") && !_hasEatenApple)
             {
                 AppleManager.instance.UpdateAppleCount(-1);
                 _sheepController.BeginExitPenCoroutine();
+                _sheepSoundPlayer.PlaySFX(0, transform.position);
                 _sheepSoundPlayer.PlaySFX(1, transform.position);
                 _hasEatenApple = true;
             }
