@@ -1,10 +1,10 @@
 
 using UnityEngine;
 
-public class DungSpawner : MonoBehaviour
+public class MarkSpawner : MonoBehaviour
 {
     int MarkPlacements;
-    public PrefabDungScript mark;
+    public PrefabMarkScript mark;
     // public int[] dungLocationSpaces; (Add for quaility of life to spawn dung off each other using array)
     private void Start()
     {
@@ -15,16 +15,15 @@ public class DungSpawner : MonoBehaviour
         {
             Debug.Log("count for Mark went up");
             currentCount++;
-            int x = Random.Range(9, -9);
-            int y = Random.Range(9, -9);
-            Instantiate(mark, new Vector3(x, y, 0), Quaternion.identity);
+            float x = Random.Range(0.21f, -0.18f);
+            float y = Random.Range(2.1f, 1.75f);
+            // Set area on crown to spawn Marks
+            Instantiate(mark, new Vector3(x, y, 1.950f), Quaternion.identity);
             Debug.Log("Spawned Mark");
 
         }
-        cusGameManager.Instance.objectiveCounter.SetCounter(currentCount);
-        cusGameManager.Instance.objectiveCount = currentCount;
+        ptcGameManager.Instance.objectiveCounter.SetCounter(currentCount);
+        ptcGameManager.Instance.objectiveCount = currentCount;
     }
 }
-
-// could change to track number of dung till it switches off instaead of times it commanded for simplicity?
 

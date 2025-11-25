@@ -2,12 +2,21 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PrefabDungScript : MonoBehaviour
+public class PrefabMarkScript : MonoBehaviour
 {
     ObjectiveCounter objectiveCounter;
     GameObject mark;
     Player player;
     float opacityDelay = 0.5f;
+
+     Vector3 lastPos;
+
+
+    void Start()
+    {
+        lastPos = this.gameObject.transform.position;
+    }
+
 
 
 
@@ -32,28 +41,30 @@ public class PrefabDungScript : MonoBehaviour
 
     private void MarkCleared()
     {
-        cusGameManager.Instance.objectiveCount--;
-        cusGameManager.Instance.objectiveCounter.DecrementCounter();
+        ptcGameManager.Instance.objectiveCount--;
+        ptcGameManager.Instance.objectiveCounter.DecrementCounter();
         Destroy(gameObject);
     }
 
     private void MarkOpacity()
     {
-        Color newColour = this.GetComponent<MeshRenderer>().material.color;
+        Color newColour = this.GetComponent<SpriteRenderer>().material.color;
         newColour.a -= Time.deltaTime * opacityDelay;
-        this.GetComponent<MeshRenderer>().material.color = newColour;
+        this.GetComponent<SpriteRenderer>().material.color = newColour;
 
         if (newColour.a <= 0f)
         {
             MarkCleared();
         }
     }
-
-    void OnTriggerStay(Collider player)
+    void OnTriggerStay(Collider ragTrigger)
     {
-        if (player.gameObject.GetComponent<Player>() != null)
+        if (ragTrigger.gameObject.GetComponent<Player>() != null && ragTrigger.gameObject.transform.position != lastPos)
         {
             MarkOpacity();
+            print("Detected mark with rag");
+            lastPos = ragTrigger.gameObject.transform.position;
+
         }
     }
 }
