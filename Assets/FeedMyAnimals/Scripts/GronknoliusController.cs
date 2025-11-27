@@ -28,7 +28,10 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         protected override void MoveInPattern()
         {
-            base.MoveInPattern();
+            if (!GameManager.instance.GetGameOverValue())
+            {
+                base.MoveInPattern();
+            }
         }
 
         protected override void MoveToPosition(Vector3 vectorToMoveOn)

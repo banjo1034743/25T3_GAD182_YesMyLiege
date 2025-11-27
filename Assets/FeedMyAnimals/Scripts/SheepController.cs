@@ -81,7 +81,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         protected override void MoveInPattern()
         {
-            if (!_sheepAppleEater.GetHasEatenApple())
+            if (!_sheepAppleEater.GetHasEatenApple() && !GameManager.instance.GetGameOverValue())
             {
                 Debug.Log("Despite having eten the apple, we're still calling MoveInPattern()");
                 base.MoveInPattern();

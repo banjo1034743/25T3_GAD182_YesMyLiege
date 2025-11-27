@@ -27,11 +27,17 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         public void DropApple()
         {
-            if (_dropAction.WasPerformedThisFrame())
+            if (_dropAction.WasPerformedThisFrame() && !GameManager.instance.GetGameOverValue())
             {
                 if (AppleManager.instance.GetAppleCount() >= 0)
                 {
-                    Instantiate(_apple, _positionToDropApples.position, Quaternion.identity);
+                    GameObject tempApple = Instantiate(_apple, _positionToDropApples.position, Quaternion.identity);
+
+                    if (tempApple.GetComponent<AudioSource>() != null)
+                    {
+                        tempApple.GetComponent<AudioSource>().volume = Random.Range(0.5f, 0.75f);
+                        tempApple.GetComponent<AudioSource>().pitch = Random.Range(1f, 1.5f);
+                    }
                 }
             }
         }

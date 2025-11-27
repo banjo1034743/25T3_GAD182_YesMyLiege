@@ -30,26 +30,29 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         private void MovePlayer()
         {
-            if (transform.position.x < _playerMovingBounds && transform.position.x > -_playerMovingBounds)
+            if (!GameManager.instance.GetGameOverValue())
             {
-                // 10 is what keeps the player directly over the highet ground in screenspace
-                Vector3 readValue = new Vector3(_moveAction.ReadValue<Vector2>().x, _moveAction.ReadValue<Vector2>().y, 10);
+                if (transform.position.x < _playerMovingBounds && transform.position.x > -_playerMovingBounds)
+                {
+                    // 10 is what keeps the player directly over the highet ground in screenspace
+                    Vector3 readValue = new Vector3(_moveAction.ReadValue<Vector2>().x, _moveAction.ReadValue<Vector2>().y, 10);
 
-                // readValue doesn't translate over to worldspace yet, so we need to convert it
-                Vector3 screenPosition = _mainCamera.ScreenToWorldPoint(readValue);
+                    // readValue doesn't translate over to worldspace yet, so we need to convert it
+                    Vector3 screenPosition = _mainCamera.ScreenToWorldPoint(readValue);
 
-                // 1 is what keeps the player directly over the highet ground in world space
-                transform.position = new Vector3(screenPosition.x, transform.position.y, 1);
-            }
-            // These else conditions ensure we are kept in the bounds and ensure we dont get stuck out of them by
-            // moving us slightly out
-            else if (transform.position.x > _playerMovingBounds)
-            {
-                transform.position = new Vector3(_playerMovingBounds - 0.1f, transform.position.y, 1);
-            }
-            else if (transform.position.x < -_playerMovingBounds)
-            {
-                transform.position = new Vector3(-_playerMovingBounds + 0.1f, transform.position.y, 1);
+                    // 1 is what keeps the player directly over the highet ground in world space
+                    transform.position = new Vector3(screenPosition.x, transform.position.y, 1);
+                }
+                // These else conditions ensure we are kept in the bounds and ensure we dont get stuck out of them by
+                // moving us slightly out
+                else if (transform.position.x > _playerMovingBounds)
+                {
+                    transform.position = new Vector3(_playerMovingBounds - 0.1f, transform.position.y, 1);
+                }
+                else if (transform.position.x < -_playerMovingBounds)
+                {
+                    transform.position = new Vector3(-_playerMovingBounds + 0.1f, transform.position.y, 1);
+                }
             }
         }
 
