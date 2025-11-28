@@ -15,7 +15,7 @@ public class DungSpawner : MonoBehaviour
         {
             Debug.Log("count for dung went up");
             currentCount++;
-            int x = Random.Range(9, -9);
+            float x = Random.Range(9f, -9f);
             Instantiate(dung, new Vector3(x, 0, 0), Quaternion.Euler (0,0,90));
             Debug.Log("Spawned dung");
 
