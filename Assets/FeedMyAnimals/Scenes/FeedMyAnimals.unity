@@ -2404,6 +2404,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749579796}
   m_CullTransparentMesh: 1
+--- !u!1 &1868094138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8141920475938890582, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
+  m_PrefabInstance: {fileID: 2612652383412907293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1868094140
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868094138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1868094141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868094138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundEffects:
+  - {fileID: 8300000, guid: b06dc65ec794e174e988a04b91186e17, type: 3}
+  - {fileID: 8300000, guid: 394ec4139d904e042a528d210c6a1b67, type: 3}
+--- !u!114 &1868094142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868094138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6c906bcac914043bd6aeef59edef63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGronknoliusEatApple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1900624013}
+        m_TargetAssemblyTypeName: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
+        m_MethodName: ToggleGameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1868094138}
+        m_TargetAssemblyTypeName: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1868094143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868094138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec5dc5d9bd80f24283c486cf5600a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animalMovementSpeed: 2.5
+  _firstPositionToMoveTo: {x: 9, y: 3, z: 0}
+  _secondPositionToMoveTo: {x: -9, y: 3, z: 0}
+  _heightToStartAt: 3
+  _movingDirection: 0
+  _animalAnimator: {fileID: 1868094140}
+  _animalWalkingZone: {fileID: 193097126}
+  _amountToIncrementSpeedBy: 5
+  _gronknoliusSoundPlayer: {fileID: 1868094141}
 --- !u!1 &1900624012
 GameObject:
   m_ObjectHideFlags: 0
