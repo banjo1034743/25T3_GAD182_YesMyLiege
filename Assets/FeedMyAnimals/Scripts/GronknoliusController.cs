@@ -49,6 +49,15 @@ namespace DirtPoorPeasants.FeedMyAnimals
             base.InitializeAnimal();
         }
 
+        bool ColliderContainsPoint(Transform ColliderTransform, Vector3 Point, bool Enabled)
+        {
+            Vector3 localPos = ColliderTransform.InverseTransformPoint(Point);
+            if (Enabled && Mathf.Abs(localPos.x) < 0.5f && Mathf.Abs(localPos.y) < 0.5f && Mathf.Abs(localPos.z) < 0.5f)
+                return true;
+            else
+                return false;
+        }
+
         #endregion
 
         #region Unity Methods

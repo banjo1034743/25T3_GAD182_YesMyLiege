@@ -68,6 +68,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
                     if (_animalWalkingZone.bounds.Contains(transform.position) == false)
                     {
+                        Debug.Log("We're out of bounds");
                         Rotate(180);
                         ChangeDirections();
                     }
@@ -77,8 +78,9 @@ namespace DirtPoorPeasants.FeedMyAnimals
                     Rotate(180);
                     ChangeDirections();
                     break;
-                }
+                
             }
+        }
 
         protected virtual void Rotate(float amountToRotateBy)
         {

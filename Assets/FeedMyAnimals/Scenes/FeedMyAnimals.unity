@@ -273,7 +273,7 @@ PrefabInstance:
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 
-      objectReference: {fileID: 989837736}
+      objectReference: {fileID: 7379507829831470776}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -396,8 +396,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0000023, y: 0.5362374, z: 2.0906606}
-  m_Center: {x: 0.0000011444092, y: 0.20811865, z: -0.050153255}
+  m_Size: {x: 1.027783, y: 0.92, z: 3.27}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &199126725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 41f081d5c6d286c47a33bed3f84de79a, type: 3}
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.08
+      value: -4.6
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.y
@@ -478,7 +478,7 @@ PrefabInstance:
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 
-      objectReference: {fileID: 989837736}
+      objectReference: {fileID: 7379507829831470776}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1302,7 +1302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.33
+      value: 2.88
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1363,7 +1363,7 @@ PrefabInstance:
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 
-      objectReference: {fileID: 989837736}
+      objectReference: {fileID: 7379507829831470776}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1432,28 +1432,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &989837736 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-  m_PrefabInstance: {fileID: 1519678103414450972}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159335477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ec5dc5d9bd80f24283c486cf5600a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &989837743 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5710947462973599044, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-  m_PrefabInstance: {fileID: 1519678103414450972}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159335477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1024101441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1662,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisCollider: {fileID: 1028843865}
+--- !u!4 &1037449453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+  m_PrefabInstance: {fileID: 5957992352341022463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1097709003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1809,11 +1792,6 @@ Transform:
   - {fileID: 157499979}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1159335477 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 766668266924444768, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-  m_PrefabInstance: {fileID: 1519678103414450972}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1217092924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1828,7 +1806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.32
+      value: 8.58
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1889,7 +1867,7 @@ PrefabInstance:
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 
-      objectReference: {fileID: 989837736}
+      objectReference: {fileID: 7379507829831470776}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1966,7 +1944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.29
+      value: 5.65
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2027,7 +2005,7 @@ PrefabInstance:
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 
-      objectReference: {fileID: 989837736}
+      objectReference: {fileID: 7379507829831470776}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2404,108 +2382,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749579796}
   m_CullTransparentMesh: 1
---- !u!1 &1868094138 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8141920475938890582, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-  m_PrefabInstance: {fileID: 2612652383412907293}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1868094140
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868094138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1868094141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868094138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _soundEffects:
-  - {fileID: 8300000, guid: b06dc65ec794e174e988a04b91186e17, type: 3}
-  - {fileID: 8300000, guid: 394ec4139d904e042a528d210c6a1b67, type: 3}
---- !u!114 &1868094142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868094138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6c906bcac914043bd6aeef59edef63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnGronknoliusEatApple:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1900624013}
-        m_TargetAssemblyTypeName: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
-        m_MethodName: ToggleGameOver
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1868094138}
-        m_TargetAssemblyTypeName: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1868094143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868094138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ec5dc5d9bd80f24283c486cf5600a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animalMovementSpeed: 2.5
-  _firstPositionToMoveTo: {x: 9, y: 3, z: 0}
-  _secondPositionToMoveTo: {x: -9, y: 3, z: 0}
-  _heightToStartAt: 3
-  _movingDirection: 0
-  _animalAnimator: {fileID: 1868094140}
-  _animalWalkingZone: {fileID: 193097126}
-  _amountToIncrementSpeedBy: 5
-  _gronknoliusSoundPlayer: {fileID: 1868094141}
 --- !u!1 &1900624012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,7 +2413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOver: 0
   _audioListener: {fileID: 330585544}
-  _gronknoliusSoundPlayer: {fileID: 989837743}
+  _gronknoliusSoundPlayer: {fileID: 4043113362079942998}
 --- !u!4 &1900624014
 Transform:
   m_ObjectHideFlags: 0
@@ -2705,200 +2581,175 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12c8db0068ef614f8ad8ba43a2f2ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1519678103414450972
+--- !u!114 &2557786980884421011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106854744808377931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6c906bcac914043bd6aeef59edef63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGronknoliusEatApple:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1900624013}
+        m_TargetAssemblyTypeName: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
+        m_MethodName: ToggleGameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6106854744808377931}
+        m_TargetAssemblyTypeName: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4043113362079942998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106854744808377931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948cfcec32e77ad4281b1fa0ed0f9e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundEffects:
+  - {fileID: 8300000, guid: b06dc65ec794e174e988a04b91186e17, type: 3}
+  - {fileID: 8300000, guid: 394ec4139d904e042a528d210c6a1b67, type: 3}
+--- !u!1001 &5957992352341022463
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 7883958986841136589}
     m_Modifications:
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5000001
       objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40000015
       objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1900624013}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1159335477}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleGameOver
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: DirtPoorPeasants.FeedMyAnimals.GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 530124699378260062, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 766668266924444768, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: m_Name
-      value: Cube - GronknoliusTest
-      objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: -4.18
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 3203687808208710223, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
+    - target: {fileID: -8679921383154817045, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5710947462973599044, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: _soundEffects.Array.size
-      value: 2
+    - target: {fileID: -5486306415626730557, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5710947462973599044, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: '_soundEffects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: b06dc65ec794e174e988a04b91186e17, type: 3}
-    - target: {fileID: 5710947462973599044, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: '_soundEffects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 394ec4139d904e042a528d210c6a1b67, type: 3}
-    - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: _animalWalkingZone
-      value: 
-      objectReference: {fileID: 193097126}
-    - target: {fileID: 7472899588614289807, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
-      propertyPath: _gronknoliusSoundPlayer
-      value: 
-      objectReference: {fileID: 989837743}
+    - target: {fileID: -5486306415626730557, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5486306415626730557, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_Name
+      value: Mesh - Gronknolius
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546523211590101795, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7884370176262677277, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845816562752519761, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -5117700066308340382, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0219cc3d649f292449a012f6bf471690, type: 3}
---- !u!1001 &2612652383412907293
-PrefabInstance:
+  m_SourcePrefab: {fileID: 100100000, guid: fe2b9d5a28797004cbc7e250e0e18ca7, type: 3}
+--- !u!1 &6106854744808377931
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 521595349783770254, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: OnGronknoliusEatApple.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1900624013}
-    - target: {fileID: 4767982445858841509, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: _animalWalkingZone
-      value: 
-      objectReference: {fileID: 193097126}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272434702375809232, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141920475938890582, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
-      propertyPath: m_Name
-      value: GameObject - Gronknolius
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3db1280845041ed4aabc895849d5988d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7883958986841136589}
+  - component: {fileID: 7379507829831470776}
+  - component: {fileID: 2557786980884421011}
+  - component: {fileID: 4043113362079942998}
+  - component: {fileID: 7330370990709926535}
+  - component: {fileID: 7595422628963928852}
+  m_Layer: 0
+  m_Name: GameObject - Gronknolius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &6259981272079856435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2913,7 +2764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.1
+      value: -7.55
       objectReference: {fileID: 0}
     - target: {fileID: 5223212222851744384, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2966,7 +2817,7 @@ PrefabInstance:
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 
-      objectReference: {fileID: 989837736}
+      objectReference: {fileID: 7379507829831470776}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3025,6 +2876,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337380822}
     - target: {fileID: 5054207060849391459, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
+      propertyPath: _mainCamera
+      value: 
+      objectReference: {fileID: 330585545}
+    - target: {fileID: 5054207060849391459, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
       propertyPath: _groundCollider
       value: 
       objectReference: {fileID: 1028843868}
@@ -3055,6 +2910,86 @@ PrefabInstance:
       addedObject: {fileID: 1589713418}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2af5698ddcff7146b81a595d6be10df, type: 3}
+--- !u!95 &7330370990709926535
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106854744808377931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7379507829831470776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106854744808377931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec5dc5d9bd80f24283c486cf5600a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animalMovementSpeed: 2.5
+  _firstPositionToMoveTo: {x: 9, y: 6.44, z: 0}
+  _secondPositionToMoveTo: {x: -9, y: 6.44, z: 0}
+  _heightToStartAt: 6.6
+  _movingDirection: 0
+  _animalAnimator: {fileID: 7330370990709926535}
+  _animalWalkingZone: {fileID: 193097126}
+  _amountToIncrementSpeedBy: 5
+  _gronknoliusSoundPlayer: {fileID: 4043113362079942998}
+--- !u!65 &7595422628963928852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106854744808377931}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.0923657, y: 2.4963841, z: 1.9538754}
+  m_Center: {x: 0.12122607, y: -2.9743288, z: 0.03221351}
+--- !u!4 &7883958986841136589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106854744808377931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.55, y: 6.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1037449453}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3069,8 +3004,7 @@ SceneRoots:
   - {fileID: 850116299}
   - {fileID: 1433186383}
   - {fileID: 1217092924}
-  - {fileID: 1519678103414450972}
-  - {fileID: 2612652383412907293}
+  - {fileID: 7883958986841136589}
   - {fileID: 6996032932531966602}
   - {fileID: 899304647}
   - {fileID: 1500263747}
