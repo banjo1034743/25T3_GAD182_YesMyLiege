@@ -29,12 +29,11 @@ namespace DirtPoorPeasants.WinLoseSequence
         public void EnableWinSequence()
         {
             // This sets the hasWon parameter to true, and hasLost to false.
-            // We use ids so as not to break code if name was changed
-            _trumpetAnimator[0].SetBool(0, true);
-            _trumpetAnimator[0].SetBool(1, false);
+            _trumpetAnimator[0].SetBool("hasWon", true);
+            _trumpetAnimator[0].SetBool("hasLost", false);
 
-            _trumpetAnimator[1].SetBool(0, true);
-            _trumpetAnimator[1].SetBool(1, false);
+            _trumpetAnimator[1].SetBool("hasWon", true);
+            _trumpetAnimator[1].SetBool("hasLost", false);
 
             _trumpetSequenceScreen.SetActive(true);
         }
@@ -45,13 +44,29 @@ namespace DirtPoorPeasants.WinLoseSequence
         /// </summary>
         public void EnableLoseSequence()
         {
-            _trumpetAnimator[0].SetBool(0, false);
-            _trumpetAnimator[0].SetBool(1, true);
+            _trumpetAnimator[0].SetBool("hasWon", false);
+            _trumpetAnimator[0].SetBool("hasLost", true);
 
-            _trumpetAnimator[1].SetBool(0, false);
-            _trumpetAnimator[1].SetBool(1, true);
+            _trumpetAnimator[1].SetBool("hasWon", false);
+            _trumpetAnimator[1].SetBool("hasLost", true);
 
             _trumpetSequenceScreen.SetActive(true);
+        }
+
+        #endregion
+
+        #region Debug
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                EnableWinSequence();
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                EnableLoseSequence();
+            }
         }
 
         #endregion

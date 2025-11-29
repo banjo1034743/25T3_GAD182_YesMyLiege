@@ -363,7 +363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee447a2b65f15f24da55f4a0a8704d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trumpetAnimator: []
+  _trumpetAnimator:
+  - {fileID: 1684760405}
+  - {fileID: 836081749}
   _trumpetSequenceScreen: {fileID: 743103556}
 --- !u!1 &743103556
 GameObject:
