@@ -12,6 +12,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("This will be initialized when the game starts")]
         [SerializeField] private float _playerMovingBounds;
 
+        [SerializeField] private Vector2 _lastRecordedMousePosition;
+
         [Header("Components")]
 
         [SerializeField] private Camera _mainCamera;
@@ -20,6 +22,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [SerializeField] private GroundCollider _groundCollider;
 
+        [SerializeField] private PlayerAnimationToggler _playerAnimationToggler;
+
         private InputActionMap _feedMyAnimalsActionMap;
 
         private InputAction _moveAction;
@@ -27,6 +31,27 @@ namespace DirtPoorPeasants.FeedMyAnimals
         #endregion
 
         #region Methods
+
+        /// <summary>
+        /// This method is called by PlayerAnimationToggler to know when the
+        /// player is moving so it can play the shuffling animation
+        /// </summary>
+        /// <returns></returns>
+        public void CheckIsMoving()
+        {
+            Vector2 differenceToCalculate = _moveAction.ReadValue<Vector2>() - _lastRecordedMousePosition;
+
+            if (differenceToCalculate.magnitude > 0.01f)
+            {
+                _playerAnimationToggler.ToggleMoveAnimation(true);
+            }
+            else
+            {
+                _playerAnimationToggler.ToggleMoveAnimation(false);
+            }
+
+            _lastRecordedMousePosition = _moveAction.ReadValue<Vector2>();
+        }
 
         private void MovePlayer()
         {
@@ -64,6 +89,9 @@ namespace DirtPoorPeasants.FeedMyAnimals
             _mainCamera = Camera.main;
 
             _playerMovingBounds = _groundCollider.GetGroundColliderBoundsSize().x / 2;
+
+            // get current position as of now prioer to moving
+            _lastRecordedMousePosition = _moveAction.ReadValue<Vector2>();
         }
 
         #endregion
@@ -80,6 +108,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         void Update()
         {
             MovePlayer();
+            CheckIsMoving();
         }
 
         #endregion
