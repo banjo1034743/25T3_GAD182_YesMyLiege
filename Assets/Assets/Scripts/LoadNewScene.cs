@@ -1,3 +1,4 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 
 public class LoadNewScene : MonoBehaviour
@@ -48,5 +49,13 @@ public class LoadNewScene : MonoBehaviour
     {
        microgameSelected = Random.Range(0,2); // set to 1,8
        print ($"microgame selected: {microgameSelected}");
+    }
+
+
+    public void MoveToNextScene()
+    {
+        SceneSwapper.instance.LoadUnloadScene("TransitionScene");
+        transSceneHolder.SetActive(true);
+        
     }
 }
