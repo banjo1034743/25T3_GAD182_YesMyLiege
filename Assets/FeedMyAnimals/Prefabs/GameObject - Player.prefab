@@ -53,6 +53,7 @@ MonoBehaviour:
   _playerMovingBounds: 0
   _lastRecordedMousePosition: {x: 0, y: 0}
   _mainCamera: {fileID: 0}
+  _actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   _groundCollider: {fileID: 0}
   _playerAnimationToggler: {fileID: 1742393069480427399}
 --- !u!114 &3192182696062255076
@@ -69,6 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _apple: {fileID: 2336561279560042332, guid: d99dc55bd0e290d45880b089d72409a4, type: 3}
   _positionToDropApples: {fileID: 4018316945394784906}
+  _actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!114 &1742393069480427399
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [SerializeField] private Camera _mainCamera;
 
+        [SerializeField] private InputActionAsset _actions;
+
         [Header("Scripts")]
 
         [SerializeField] private GroundCollider _groundCollider;
@@ -83,7 +85,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         private void InitializePlayer()
         {
-            _feedMyAnimalsActionMap = InputSystem.actions.FindActionMap("Microgame/FeedMyAnimals");
+            _feedMyAnimalsActionMap = _actions.FindActionMap("Microgame/FeedMyAnimals");
             _moveAction = _feedMyAnimalsActionMap.FindAction("Move");
 
             _mainCamera = Camera.main;

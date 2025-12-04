@@ -17,6 +17,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
         [Tooltip("The transform component that is a child to the player object which we use as the position to drop apples from.")]
         [SerializeField] private Transform _positionToDropApples;
 
+        [SerializeField] private InputActionAsset _actions;
+
         private InputActionMap _feedMyAnimalsActionMap;
 
         private InputAction _dropAction;
@@ -44,7 +46,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         private void InitializeScript()
         {
-            _feedMyAnimalsActionMap = InputSystem.actions.FindActionMap("Microgame/FeedMyAnimals");
+            _feedMyAnimalsActionMap = _actions.FindActionMap("Microgame/FeedMyAnimals");
             _dropAction = _feedMyAnimalsActionMap.FindAction("Drop");
         }
 
