@@ -61,7 +61,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
                 yield return null;
             }
 
-            _sheepSoundPlayer.PlaySFX(0, transform.position);
+            _sheepSoundPlayer.PlayClipAt(0, transform.position, 0.5f);
 
             _gronknoliusController.IncreaseMovementSpeed();
 

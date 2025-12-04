@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 namespace DirtPoorPeasants.FeedMyAnimals
@@ -19,6 +20,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
         [SerializeField] private InputActionAsset _actions;
 
+        [SerializeField] private AudioMixerGroup _audioMixerGroup;
+
         private InputActionMap _feedMyAnimalsActionMap;
 
         private InputAction _dropAction;
@@ -37,8 +40,10 @@ namespace DirtPoorPeasants.FeedMyAnimals
 
                     if (tempApple.GetComponent<AudioSource>() != null)
                     {
-                        tempApple.GetComponent<AudioSource>().volume = Random.Range(0.5f, 0.75f);
-                        tempApple.GetComponent<AudioSource>().pitch = Random.Range(1f, 1.5f);
+                        AudioSource tempAudioSource = tempApple.GetComponent<AudioSource>();
+                        tempAudioSource.volume = Random.Range(0.5f, 0.75f);
+                        tempAudioSource.pitch = Random.Range(1f, 1.5f);
+                        tempAudioSource.outputAudioMixerGroup = _audioMixerGroup;
                     }
                 }
             }

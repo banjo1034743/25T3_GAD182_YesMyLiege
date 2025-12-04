@@ -23,7 +23,7 @@ namespace DirtPoorPeasants.FeedMyAnimals
         public void IncreaseMovementSpeed()
         {
             _animalMovementSpeed += _amountToIncrementSpeedBy;
-            _gronknoliusSoundPlayer.PlaySFX(0, transform.position);
+            _gronknoliusSoundPlayer.PlayClipAt(0, transform.position, 0.5f);
         }
 
         protected override void MoveInPattern()

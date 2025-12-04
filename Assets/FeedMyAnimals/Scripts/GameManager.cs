@@ -31,13 +31,13 @@ namespace DirtPoorPeasants.FeedMyAnimals
                 case false:
                     _gameOver = true;
                     Time.timeScale = 0;
-                    _gronknoliusSoundPlayer.PlaySFX(1, Vector3.zero); // Remove this when win sequence is completed
-                    Debug.Log("You lost the microgame!");
+                    //_gronknoliusSoundPlayer.PlaySFX(1, Vector3.zero); // Remove this when win sequence is completed
+                    //Debug.Log("You lost the microgame!");
                     break;
                 case true:
                     _gameOver= false;
                     Time.timeScale = 1;
-                    Debug.Log("You won the microgame!");
+                    //Debug.Log("You won the microgame!");
                     break;
             }
         }

@@ -32,8 +32,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
             {
                 AppleManager.instance.UpdateAppleCount(-1);
                 _sheepController.BeginExitPenCoroutine();
-                _sheepSoundPlayer.PlaySFX(0, transform.position);
-                _sheepSoundPlayer.PlaySFX(1, transform.position);
+                _sheepSoundPlayer.PlayClipAt(0, transform.position, 0.5f);
+                _sheepSoundPlayer.PlayClipAt(1, transform.position, 0.5f);
                 _hasEatenApple = true;
             }
         }
