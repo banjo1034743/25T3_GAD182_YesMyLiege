@@ -17,6 +17,8 @@ namespace DirtPoorPeasants.WinLoseSequence
         [Tooltip("This is the actual screen itself with the trumpets in a canvas as UI. It's enabled after we specify what animation to play with the parameters, which after enabling will go and play the animation based on what parameters we specified.")]
         [SerializeField] private GameObject _trumpetSequenceScreen;
 
+        public static TrumpetEnabler instance;
+
         #endregion
 
         #region Methods
@@ -55,19 +57,35 @@ namespace DirtPoorPeasants.WinLoseSequence
 
         #endregion
 
-        #region Debug
+        #region Unity Methods
 
-        private void Update()
+        private void Awake()
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (instance == null)
             {
-                EnableWinSequence();
+                instance = this;
             }
-            else if (Input.GetKeyDown(KeyCode.E))
+            else
             {
-                EnableLoseSequence();
+                Destroy(this);
             }
         }
+
+        #endregion
+
+        #region Debug
+
+        //private void Update()
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Q))
+        //    {
+        //        EnableWinSequence();
+        //    }
+        //    else if (Input.GetKeyDown(KeyCode.E))
+        //    {
+        //        EnableLoseSequence();
+        //    }
+        //}
 
         #endregion
     }
