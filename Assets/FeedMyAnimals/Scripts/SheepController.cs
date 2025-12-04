@@ -53,11 +53,9 @@ namespace DirtPoorPeasants.FeedMyAnimals
                 Rotate(-180);
             }
 
-            _sheepManager.RemoveSheep(gameObject);
-
             while (transform.position.x > _positionToExitTo.x)
             {
-                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 4f * _animalMovementSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, _positionToExitTo, 6f * _animalMovementSpeed * Time.deltaTime);
                 Debug.Log("We're currently in the ExitPen() while loop");
 
                 yield return null;
@@ -66,6 +64,8 @@ namespace DirtPoorPeasants.FeedMyAnimals
             _sheepSoundPlayer.PlayClipAt(0, transform.position, 0.5f);
 
             _gronknoliusController.IncreaseMovementSpeed();
+
+            _sheepManager.RemoveSheep(gameObject);
         }
 
         private void DefineMovingRange()
