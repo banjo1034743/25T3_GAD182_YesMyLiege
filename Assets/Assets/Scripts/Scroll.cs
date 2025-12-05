@@ -20,8 +20,8 @@ public class Scroll : MonoBehaviour
     3 = Feed My Animals
     4 = Dig The Well
     5 = Hammer The Post
-    6 = Parry The Knight
-    7 = Royal Marksman
+    6 = X Parry The Knight - Not In This Build
+    7 = X Royal Marksman - Not In This Build
     */
 
 
@@ -55,11 +55,13 @@ public class Scroll : MonoBehaviour
 
          else if (loadnewScene.microgameSelected == 4)
         {
-            
+            leftMouseClickIcon.enabled = true;
+            scrollText.text = "Dig The Well";
         }
          else if (loadnewScene.microgameSelected == 5)
         {
-            
+            leftMouseClickIcon.enabled = true;
+            scrollText.text = "Hammer The Post";
         }
 
          else if (loadnewScene.microgameSelected == 6)

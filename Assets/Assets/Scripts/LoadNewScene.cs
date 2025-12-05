@@ -47,7 +47,7 @@ public class LoadNewScene : MonoBehaviour
 
     private void PickRandomMicrogame()
     {
-       microgameSelected = Random.Range(0,2); // set to 1,8
+       microgameSelected = Random.Range(1,6); // set to 1,8
        print ($"microgame selected: {microgameSelected}");
     }
 
