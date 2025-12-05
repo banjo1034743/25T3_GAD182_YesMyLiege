@@ -353,6 +353,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 193097126}
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
+      propertyPath: _positionToExitTo.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _positionToExitTo.y
       value: 2.77
       objectReference: {fileID: 0}
@@ -1164,6 +1168,10 @@ PrefabInstance:
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
+    - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
+      propertyPath: _positionToExitTo.x
+      value: -12
+      objectReference: {fileID: 0}
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _positionToExitTo.y
       value: 2.77
@@ -2353,6 +2361,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 193097126}
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
+      propertyPath: _positionToExitTo.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _positionToExitTo.y
       value: 2.77
       objectReference: {fileID: 0}
@@ -3269,6 +3281,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 193097126}
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
+      propertyPath: _positionToExitTo.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _positionToExitTo.y
       value: 2.77
       objectReference: {fileID: 0}
@@ -3510,6 +3526,10 @@ PrefabInstance:
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
+    - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
+      propertyPath: _positionToExitTo.x
+      value: -12
+      objectReference: {fileID: 0}
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _positionToExitTo.y
       value: 2.77
@@ -5064,6 +5084,10 @@ PrefabInstance:
       propertyPath: _animalWalkingZone
       value: 
       objectReference: {fileID: 193097126}
+    - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
+      propertyPath: _positionToExitTo.x
+      value: -12
+      objectReference: {fileID: 0}
     - target: {fileID: 6212721838825714480, guid: 99fa4a2e7c91a984fbf21c74f2e14340, type: 3}
       propertyPath: _gronknoliusController
       value: 

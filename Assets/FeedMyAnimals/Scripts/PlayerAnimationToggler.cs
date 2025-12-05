@@ -23,6 +23,11 @@ namespace DirtPoorPeasants.FeedMyAnimals
             _playerAnimator.SetBool("isMoving", valueToSetParameterTo);
         }
 
+        public bool GetIsMovingValue()
+        {
+            return _playerAnimator.GetBool("isMoving");
+        }
+
         #endregion
     }
 }
