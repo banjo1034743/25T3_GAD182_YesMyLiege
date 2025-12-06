@@ -100,3 +100,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 258397
+  packageName: Low Poly Simple Medieval Props
+  packageVersion: 1.0
+  assetPath: Assets/LowPolyMedievalPropsLite/Models/Candle_02.fbx
+  uploadId: 594091
