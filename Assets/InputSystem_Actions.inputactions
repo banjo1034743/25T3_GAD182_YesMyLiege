@@ -573,6 +573,34 @@
             ]
         },
         {
+            "name": "Microgame/PolishThyCrown",
+            "id": "a1d8bab5-5879-4344-8953-fedaefd77090",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "6a89827f-33e3-423f-ae22-86478c20686c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dc6ea913-24c2-464c-9a41-17230f5986d0",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "Microgame/FeedMyAnimals",
             "id": "b9231160-5025-4989-ac49-5e7a22d9cd1b",
             "actions": [
@@ -615,6 +643,54 @@
                     "processors": "",
                     "groups": "",
                     "action": "Drop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Microgame/CleanUpStables",
+            "id": "61fa0b14-2f58-438e-8acc-291e50f9148f",
+            "actions": [
+                {
+                    "name": "MovementL",
+                    "type": "Button",
+                    "id": "93d90fe8-50e8-42ea-bf4e-09723d367f6f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MovementR",
+                    "type": "Button",
+                    "id": "3473f95b-0113-4de6-9a4b-5728106276cf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "de5c581b-403b-4e29-a3dd-71bbe6f85ac5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "Hold(duration=0.4,pressPoint=0.1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovementL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "90ffce5a-cd7e-4e33-a64d-8075e1271fd3",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "MovementR",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
