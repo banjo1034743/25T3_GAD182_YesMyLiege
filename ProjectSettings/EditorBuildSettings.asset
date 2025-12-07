@@ -9,9 +9,24 @@ EditorBuildSettings:
     path: Assets/MicrogameSwappingAssets/TransitionScene.unity
     guid: d4b324c5f8a0f4a498a9756adfd6045e
   - enabled: 1
+    path: Assets/Scenes/Clean thy Crown 2.unity
+    guid: 5d7e00d1ad7f3d043b06627c0ddfc23b
+  - enabled: 1
+    path: Assets/Assets/CleanUpStables.unity
+    guid: 807bfff6c5eb2b240a753613aabf43f8
+  - enabled: 1
+    path: Assets/FeedMyAnimals/Scenes/FeedMyAnimals.unity
+    guid: a52cd7f9f4ed8a747934958a13f17bfa
+  - enabled: 1
+    path: Assets/DigTheWell/DigTheWell.unity
+    guid: 02d57c4da2f85334ca9311cd24bcd8c8
+  - enabled: 1
+    path: Assets/HammerThePost/HammerThePost.unity
+    guid: ac1e87b7066aac04e9654c1de1b4a2de
+  - enabled: 0
     path: Assets/MicrogameSwappingAssets/TestScene1.unity
     guid: dfd5df809f25e9b43ad7d2da5096ccc5
-  - enabled: 1
+  - enabled: 0
     path: Assets/MicrogameSwappingAssets/TestScene2.unity
     guid: aa0afcaa9f67f9c40819ac892b9ce6d1
   m_configObjects:
