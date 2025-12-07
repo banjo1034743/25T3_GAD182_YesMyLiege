@@ -40,14 +40,14 @@ public class LoadNewScene : MonoBehaviour
 
     public void BeginNextMicrogame()
     {
-        print(SceneSwapper.instance.gameScenes[microgameSelected]);
+        // print(SceneSwapper.instance.gameScenes[microgameSelected]);
         SceneSwapper.instance.LoadUnloadScene(SceneSwapper.instance.gameScenes[microgameSelected]);
         transSceneHolder.SetActive(false);
     }
 
     private void PickRandomMicrogame()
     {
-       microgameSelected = Random.Range(1,4); // set to 1,8
+       microgameSelected = Random.Range(1,6); // set to 1,8
        print ($"microgame selected: {microgameSelected}");
     }
 

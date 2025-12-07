@@ -22,11 +22,12 @@ public static GameManager Instance { get; private set; }
     }
     public int objectiveCount;
     
-    // private void CompletionChecker()
-    // {
-    //     if (objectiveCount <= 0)
-    //     {
-    //         SceneManager.LoadScene("Intermission Scene");
-    //     }
-    // }
+     private void CompletionChecker()
+     {
+         if (objectiveCount <= 0)
+         {
+             SceneManager.LoadScene("Intermission Scene");
+         }
+    
+}
 }

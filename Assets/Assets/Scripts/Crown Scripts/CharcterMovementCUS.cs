@@ -8,7 +8,7 @@ public class CharcterMovementCUS : MonoBehaviour
 private InputActionMap cleanUpStablesActions;
 private InputAction inputActionR;
 private InputAction inputActionL;
-private float playerSpeed = 100f;
+// private float playerSpeed = 100f;
 
 
     void Start()
