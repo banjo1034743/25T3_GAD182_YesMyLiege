@@ -8,6 +8,9 @@ public class PrefabDungScript : MonoBehaviour
     GameObject dung;
     Player player;
     float opacityDelay = 0.5f;
+    
+
+    
 
 
 
@@ -32,8 +35,8 @@ public class PrefabDungScript : MonoBehaviour
 
     private void DungCleared()
     {
-        cusGameManager.Instance.objectiveCount--;
-        cusGameManager.Instance.objectiveCounter.DecrementCounter();
+        GameManager.Instance.objectiveCount--;
+        GameManager.Instance.objectiveCounter.DecrementCounter();
         Destroy(gameObject);
     }
 
@@ -41,8 +44,12 @@ public class PrefabDungScript : MonoBehaviour
     {
         Color newColour = this.GetComponent<MeshRenderer>().material.color;
         newColour.a -= Time.deltaTime * opacityDelay;
-        this.GetComponent<MeshRenderer>().material.color = newColour;
-
+        MeshRenderer[] dungPieces = this.GetComponentsInChildren<MeshRenderer>();
+        
+        foreach (MeshRenderer dungColour in dungPieces)
+        {
+            dungColour.material.color = newColour;
+        }
         if (newColour.a <= 0f)
         {
             DungCleared();
@@ -54,6 +61,7 @@ public class PrefabDungScript : MonoBehaviour
         if (player.gameObject.GetComponent<Player>() != null)
         {
             DungOpacity();
+            print("Detected Dung");
         }
     }
 

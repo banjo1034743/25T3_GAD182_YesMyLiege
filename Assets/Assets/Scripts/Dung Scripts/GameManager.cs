@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class cusGameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-public static cusGameManager Instance { get; private set; }
+public static GameManager Instance { get; private set; }
     public ObjectiveCounter objectiveCounter;
 
     private void Awake()
