@@ -20,8 +20,8 @@ public class DungSpawner : MonoBehaviour
             Debug.Log("Spawned dung");
 
         }
-        cusGameManager.Instance.objectiveCounter.SetCounter(currentCount);
-        cusGameManager.Instance.objectiveCount = currentCount;
+        GameManager.Instance.objectiveCounter.SetCounter(currentCount);
+        GameManager.Instance.objectiveCount = currentCount;
     }
 }
 

@@ -35,8 +35,8 @@ public class PrefabDungScript : MonoBehaviour
 
     private void DungCleared()
     {
-        cusGameManager.Instance.objectiveCount--;
-        cusGameManager.Instance.objectiveCounter.DecrementCounter();
+        GameManager.Instance.objectiveCount--;
+        GameManager.Instance.objectiveCounter.DecrementCounter();
         Destroy(gameObject);
     }
 
